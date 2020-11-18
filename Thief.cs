@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,21 +6,24 @@ public class Thief : MonoBehaviour
 {
     [SerializeField] private float _speed;
 
-    void Update()
+
+    private void Update()
     {
-        if(Input.GetAxis("Horizontal") != 0)
+        float key = Input.GetAxis("Horizontal");
+        if (key != 0)
         {
-            Flip();
+            Flip(key);
             transform.Translate(_speed * Time.deltaTime, 0, 0);
         }
     }
-    void Flip()
+
+    private void Flip(float key)
     {
-        if (Input.GetAxis("Horizontal") > 0)
+        if (key > 0)
         {
             transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
-        if (Input.GetAxis("Horizontal") < 0)
+        if (key < 0)
         {
             transform.localRotation = Quaternion.Euler(0, 180, 0);
         }

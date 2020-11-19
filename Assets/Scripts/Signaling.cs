@@ -7,19 +7,19 @@ public class Signaling : MonoBehaviour
     [SerializeField] private AudioSource _signaling;
     [SerializeField] private float _stepDistance;
     [SerializeField] private float _timeForWait;
-    private Coroutine _coroutine;
+    private Coroutine _increaseVolume;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent<Thief>(out Thief thief))
         {
-            _coroutine = StartCoroutine(IncreaseVolume());
+            _increaseVolume = StartCoroutine(IncreaseVolume());
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        StopCoroutine(_coroutine);
+        StopCoroutine(_increaseVolume);
         if (collision.TryGetComponent<Thief>(out Thief thief))
         {
             StartCoroutine(DecreaseVolume());

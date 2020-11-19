@@ -9,10 +9,10 @@ public class Thief : MonoBehaviour
 
     private void Update()
     {
-        float key = Input.GetAxis("Horizontal");
-        if (key != 0)
+        float direction = Input.GetAxis("Horizontal");
+        if (direction != 0)
         {
-            Flip(key);
+            Flip(direction);
             transform.Translate(_speed * Time.deltaTime, 0, 0);
         }
     }

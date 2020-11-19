@@ -609,9 +609,6 @@
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>D:/Myself/Разработка/Игры/Practice/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Myself/Разработка/Игры/Practice/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Myself/Разработка/Игры/Practice/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -629,6 +626,9 @@
     </Reference>
     <Reference Include="PsdPlugin">
       <HintPath>D:/Myself/Разработка/Игры/Practice/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>D:/Myself/Разработка/Игры/Practice/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>D:/Myself/Разработка/Игры/Practice/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>

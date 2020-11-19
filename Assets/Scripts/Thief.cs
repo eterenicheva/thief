@@ -17,13 +17,13 @@ public class Thief : MonoBehaviour
         }
     }
 
-    private void Flip(float key)
+    private void Flip(float direction)
     {
-        if (key > 0)
+        if (direction > 0)
         {
             transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
-        if (key < 0)
+        if (direction < 0)
         {
             transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
